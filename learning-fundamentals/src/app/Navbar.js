@@ -1,5 +1,6 @@
+'use client'
 import Link from 'next/link';
-import React from 'react';
+import { usePathname } from 'next/navigation';
 
 function Navbar() {
 
@@ -28,16 +29,27 @@ function Navbar() {
       name: "SignUp",
       link: "/signup"
     },
-  ]
+    {
+      name: "Navigate",
+      link: "/navigate"
+    },
+  ];
+
+  const pathName = usePathname();
 
   return (
     <div>
       <div className='w-[100%] h-[10vh] bg-slate-500 flex justify-center items-center'>
-        {navLinks.map((item)=> (
-          <Link key={item.name} href={item.link}>
-          <p className="px-3">{item.name}</p>
-          </Link>
-        ))}
+        {navLinks.map((item)=> {
+          let isActive = pathName.endsWith(item.link)
+          return (
+            (
+              <Link key={item.name} href={item.link} className={isActive ? "font-extrabold text[30px]": ""}>
+              <p className="px-3">{item.name}</p>
+              </Link>
+            )
+          )
+        })}
       </div>
     </div>
   );

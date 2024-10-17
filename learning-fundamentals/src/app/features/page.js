@@ -4,23 +4,23 @@ function features() {
 
   const featuresList = [
     {
-        name: "First features",
+        name: "First Features",
         link: "features/first-features"
     },
     {
-        name: "Second features",
+        name: "Second Features",
         link: "features/second-features"
     },
     {
-        name: "Third features",
+        name: "Third Features",
         link: "features/third-features"
     },
     {
-        name: "Fourth features",
+        name: "Fourth Features",
         link: "features/fourth-features"
     },
     {
-        name: "Fifth features",
+        name: "Fifth Features",
         link: "features/fifth-features"
     }
 ];
