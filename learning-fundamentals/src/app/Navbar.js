@@ -20,6 +20,14 @@ function Navbar() {
       name: "Features",
       link: "/features"
     },
+    {
+      name: "Login",
+      link: "/login"
+    },
+    {
+      name: "SignUp",
+      link: "/signup"
+    },
   ]
 
   return (

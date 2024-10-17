@@ -1,5 +1,11 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: {
+    absolute: "Products"
+  }
+}
+
 function products() {
 
     const productList = [
