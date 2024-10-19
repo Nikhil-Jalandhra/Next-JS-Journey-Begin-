@@ -22,6 +22,10 @@ function Navbar() {
       link: "/features"
     },
     {
+      name: "Dashboard",
+      link: "/complex-dashboard"
+    },
+    {
       name: "Login",
       link: "/login"
     },
@@ -32,6 +36,10 @@ function Navbar() {
     {
       name: "Navigate",
       link: "/navigate"
+    },
+    {
+      name: "SampleError",
+      link: "/sampleError"
     },
   ];
 
