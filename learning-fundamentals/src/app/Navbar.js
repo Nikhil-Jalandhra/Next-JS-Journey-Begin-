@@ -14,6 +14,10 @@ function Navbar() {
       link: "/about"
     },
     {
+      name: "Gallery",
+      link: "/gallery"
+    },
+    {
       name: "Products",
       link: "/products"
     },

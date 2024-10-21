@@ -1,5 +1,7 @@
 export default function register () {
-    <div>
-        <h1>Please Register</h1>
-    </div>
+    return (
+        <div className="h-[75vh] flex items-center justify-center text-[30px]">
+            <h1>Please refresh to register.</h1>
+        </div>
+    )
 }

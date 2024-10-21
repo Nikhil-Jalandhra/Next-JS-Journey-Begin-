@@ -1,15 +1,27 @@
-import React from 'react';
-import register from './@register/page';
+"use client"
+import React, { useState, useEffect } from 'react';
 
-function dashboardLayout({children, notifications, revenue, users}) {
+function dashboardLayout({children, notifications, revenue, users, register}) {
+
+  const [userRegister, setUserRegister] = useState();
+  
+  useEffect(() => {
+    const setTrueFalse = Math.floor(Math.random() * 2);
+    console.log(setTrueFalse);
+    setUserRegister(setTrueFalse === 1);
+  }, []);
+  
   return (
-    <div className='h-[75vh]'>
+    userRegister ? (
+      <div className='h-[75vh]'>
       <div>{children}</div>
       <div>{notifications}</div>
       <div>{revenue}</div>
       <div>{users}</div>
-      <div>{register}</div>
     </div>
+    ) : (
+      <div>{register}</div>
+    )
   );
 }
 
