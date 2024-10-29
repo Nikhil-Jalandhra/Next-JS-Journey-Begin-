@@ -1,6 +1,6 @@
 
 export default function Home() {
   return (
-    <div>helo</div>
+    <div>Learning Rendering</div>
   );
 }
