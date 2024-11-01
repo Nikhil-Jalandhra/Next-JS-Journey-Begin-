@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
-import { ProductsComments } from '../components/ProductsComments';
-import { ProductsReview } from '../components/productsReview';
+import { ProductsComments } from '../components/ProductsComments.js';
+import { ProductsReview } from '../components//ProductsReview.js';
 
 function page() {
   return (
