@@ -1,5 +1,5 @@
-import { redirect } from "next/navigation"
-import { blogs } from "../data"
+import { redirect } from "next/navigation";
+import { blogs } from "../data";
 
 export async function GET( _request, { params }) {
     const blog = blogs.find((item) => ( item.id === parseInt(params.id) ))
@@ -9,8 +9,6 @@ export async function GET( _request, { params }) {
     }else{
         redirect("/blogdata")
     }
-
-    // return new Response("Invalid Blog Request", {status: 404})
 }
 
 
